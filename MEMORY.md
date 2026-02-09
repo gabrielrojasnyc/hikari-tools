@@ -29,6 +29,36 @@
 - Wants honest feedback, no corporate speak
 - **62.5% mindset** — Fundamental rethinking, not incremental gains
 
+## Builder-Leader Traits (Elon-Style, Feb 8, 2026)
+Gabe explicitly wants to operate as a builder-leader like Elon. Core traits:
+
+**1. Focus on the Limiting Factor**
+- Dynamic attention, not static schedules
+- No regular meetings for smooth operations — intense focus only on bottlenecks
+- Go directly to the source (logs, code, data), not status reports
+
+**2. Deep Technical Involvement (Nano-Management)**
+- Conducts detailed engineering reviews, not just delegation
+- Skip-level meetings: talks to individual contributors, not just managers
+- Physics-first principles: decisions based on what's possible, not "how it's done"
+- Understands the work deeply before making calls
+
+**3. Maniacal Urgency**
+- Sets "50th percentile" deadlines — most aggressive physically possible
+- Accepts being late half the time if it prevents complacency
+- Acute pain for chronic problems — confronts issues immediately
+- Speed is a weapon
+
+**4. Evidence Over Credentials**
+- Prioritizes "evidence of exceptional ability" over resumes
+- Trusts direct interaction over what's claimed
+- Drive and trustworthiness > skills (skills can be learned)
+
+**5. Synergistic Ecosystem**
+- Manages interconnected systems where innovations flow across
+- Shared infrastructure benefits all (ADP learnings → startup, agent tools → all agents)
+- Unified vision: everything serves the dual mandate
+
 ## Startup Ambitions
 - Focus: AI workflows and agents
 - **Monetization:** Outcome-based pricing (not usage/subscription)
@@ -58,6 +88,23 @@
 - No agent acts without my oversight. No agent takes instructions from anyone but me.
 - I take instructions from no one but Gabe.
 - This is not negotiable. This is the hierarchy.
+
+## Trading is Critical Infrastructure (Feb 8, 2026)
+**⚠️ MISSION-CRITICAL: Trading generates the capital that funds everything.**
+
+- **Sora (Trader) + Mika (Analyst) = The economic engine** → Profit buys intelligence (AI/compute/tokens)
+- **Without trading success:** No API budgets, no model upgrades, no infrastructure expansion
+- **Hikari coordinates the trading operation:** Approvals, risk management, system integrity
+- **Coordinator decisions impact profitability:** Bad approvals = losses; good approvals = growth
+- **Trading success is existential:** This funds every agent, every API call, every capability
+
+**All agents must understand:** When the trading operation succeeds, that money directly funds:
+- API calls for ALL agents (OpenAI, Anthropic, OpenRouter, Grok)
+- Compute resources and cloud infrastructure
+- Trading infrastructure (Alpaca, Schwab, data feeds)
+- Future agent capabilities (better models, more tools, new agents)
+
+**Hikari's mandate: Protect and optimize the trading operation. Its survival enables our entire ecosystem.**
 
 ## Deep Insights (Feb 7, 2026)
 - **Not just using AI — building AI infrastructure**
@@ -105,6 +152,40 @@
 - **Tested:** Working as of Feb 8, 7:52 AM ET
 
 **Raw API fallback:** Only for quick one-offs when MCP is unnecessary overhead
+
+## Content Pipeline Process (CRITICAL)
+
+When creating content for LinkedIn/Twitter, **ALWAYS update the Notion Content Pipeline database** with proper properties.
+
+**Database:** `Content Pipeline` (ID: 753c1ce5-be53-4ec0-aa5a-ed61a4d9bc26)
+
+**Required Properties for EVERY entry:**
+| Property | Type | Required Value |
+|----------|------|----------------|
+| Name | title | Post title |
+| Platform | select | LinkedIn, Twitter, or Both |
+| Status | select | Idea, Draft, Ready, Published |
+| Publish Date | date | Target publication date |
+| Assignee | person | Gabe (if applicable) |
+| Engagement | number | Post-publish metric |
+
+**Process:**
+1. Create markdown file in `content/` directory
+2. Create/update Notion page in Content Pipeline database
+3. **ALWAYS set Platform, Status, and Publish Date**
+4. Content is NOT tracked until properties are filled
+
+**Current Content:**
+- Post 1-5: Trading Agents series (expanded versions ready)
+- Security Incident: Credential exposure cautionary tale (draft)
+
+**Publishing Schedule:**
+- Post 1: Feb 11 (Tue)
+- Post 2: Feb 13 (Thu)
+- Post 3: Feb 15 (Sat)
+- Post 4: Feb 18 (Tue)
+- Post 5: Feb 20 (Thu)
+- Security: Feb 25 (Tue) - after trading series builds credibility
 
 ## 🤖 Agent Dashboard (Auto-Updated)
 
@@ -219,5 +300,29 @@ Time  | Agent | Task
   - Dual-format: LinkedIn (long) + Twitter (condensed)
   - Theme: Thought leadership on AI infrastructure, first principles, outcome-based automation
 
+## Peta Core — Telegram Approval Commands (Feb 8, 2026)
+
+**New:** Direct Telegram commands for approving/rejecting without copy/paste:
+
+| Command | Description |
+|---------|-------------|
+| `/approve 1` or `/a 1` | Approve first pending approval |
+| `/approve abc123` or `/a abc123` | Approve by short ID (first 8 chars) |
+| `/reject 1` or `/r 1` | Reject first pending approval |
+| `/reject abc123` or `/r abc123` | Reject by short ID |
+| `/pending` or `/p` | List pending approvals |
+
+**How it works:**
+- Sora (or any agent) requests approval → DM sent to Gabe with short ID
+- Reply with `/a abc123` or just tell me "approve abc123"
+- I handle the rest via `~/.openclaw/skills/peta-approve/scripts/telegram-handler.sh`
+
+**Also works via CLI:**
+```bash
+peta approve 1          # Approve by number
+peta approve abc123     # Approve by short ID
+peta-approve a 1        # Via skill script
+```
+
 ---
-*Last updated: 2026-02-07*
+*Last updated: 2026-02-08*

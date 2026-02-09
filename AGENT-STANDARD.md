@@ -79,6 +79,19 @@ Gabe (human, sole authority)
 No agent takes orders from anyone except their direct superior in this chain.
 Gabe can override anyone directly.
 
+## Secret Management (Vault)
+
+As of 2026-02-08, all secrets are managed by a local HashiCorp Vault instance. Every agent should know:
+
+1. **Read credentials from `~/.openclaw/credentials/<name>`** — these files are populated from Vault on every gateway start
+2. **Never hardcode secrets** in code, scripts, configs, or chat output
+3. **Never edit credential files directly** — they get overwritten from Vault on restart. Use the rotation script instead:
+   ```bash
+   ~/Projects/nagomi-trading/tools/scripts/vault-rotate-secret.sh <name> <new-value>
+   ```
+4. **If auth fails**, run `~/Projects/nagomi-trading/tools/scripts/vault-materialize.sh` to re-sync
+5. **Full docs:** `~/.vault-server/README.md`
+
 ## Incident Log
 
 ### 2026-02-07: Kōji Identity Contamination

@@ -1,0 +1,18 @@
+{
+  "lastChecks": {
+    "gateway": 1707320400,
+    "cron": 1707320400,
+    "agents": 1707320400,
+    "credentials": 1707320400,
+    "mcp": 1707320400,
+    "apis": 1707320400
+  },
+  "healthStatus": {
+    "gateway": "running",
+    "cron": "16 jobs active",
+    "agents": "5 configured",
+    "credentials": "15 files (vault-creds active)",
+    "mcp": "3 servers",
+    "memory": "2026-02-08.md current"
+  }
+}

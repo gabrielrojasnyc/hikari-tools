@@ -194,6 +194,61 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - Commit and push your own changes
 - **Review and update MEMORY.md** (see below)
 
+### 📄 Long Document Best Practices
+
+**For complex, multi-step tasks requiring 500+ lines or complex integrations:**
+
+**USE CLAUDE CODE** (`claude` CLI) instead of subagents or direct API calls.
+
+**Why:**
+- Subagent output gets truncated (hard limit on message size)
+- Direct API calls are stateless and error-prone for complex tasks
+- Claude Code has full TTY access, file system access, and stateful execution
+- Better error handling and retry logic
+
+**When to use Claude Code:**
+- Creating 500+ line documents (security audits, architecture specs)
+- Complex Notion integrations (database schemas, multi-block pages)
+- Multi-step workflows (git operations + API calls + file processing)
+- Tasks requiring human-like debugging (try, fail, retry with adjustments)
+
+**When NOT to use Claude Code:**
+- Simple queries (< 100 lines)
+- Read-only operations
+- Tasks with clear, single-step success criteria
+
+### 📢 Content Pipeline Management
+
+**When creating LinkedIn/Twitter content:**
+
+1. **Save content file** to `content/` directory
+2. **Update Notion Content Pipeline** database with ALL properties:
+   - Name (post title)
+   - Platform (LinkedIn/Twitter/Both)
+   - Status (Idea/Draft/Ready/Published)
+   - Publish Date (target date)
+   - Assignee (if applicable)
+3. **Verify properties are filled** — empty properties mean content is NOT tracked
+4. **Link to local file** in Notion page body for reference
+
+**Content Pipeline Database:** `753c1ce5-be53-4ec0-aa5a-ed61a4d9bc26`
+
+**Current schedule:** Check MEMORY.md for publishing calendar
+
+**Example:**
+```bash
+# ✅ Good - Complex security audit to Notion
+echo "Create comprehensive Notion page from /path/to/audit.md" | claude
+
+# ❌ Bad - Subagent for long documents (truncation risk)
+sessions_spawn({task: "Create 500-line report..."})  // May truncate
+
+# ❌ Bad - Direct API for complex integrations
+multiple_api_calls_with_manual_retry  // Brittle
+```
+
+**Pattern:** If you find yourself thinking "this is too complex for a simple tool call" → use Claude Code.
+
 ### 🔄 Memory Maintenance (During Heartbeats)
 
 Periodically (every few days), use a heartbeat to:
