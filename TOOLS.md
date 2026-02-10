@@ -68,6 +68,12 @@ Things like:
 - OpenClaw integration: auto-discovery via `OLLAMA_API_KEY=ollama-local`
 - Use as last-resort fallback when all cloud providers are down
 
+## Telegram Groups
+- **TheTeam** — Group chat with all agents: `-5183989090`
+  - All 5 bots present: Hikari (default), Kōji, Sora, Mika, Aegis
+  - `requireMention: false` — agents see all messages
+  - Use for: Agent status updates, memory reports, team coordination
+
 ## Why Separate?
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.

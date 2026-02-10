@@ -190,6 +190,8 @@ DEEP_SIGNALS = [
 claude "${task}" --one-shot
 ```
 
+**Visual Indicator:** When using Claude Code, prefix the message with 🧠🔧 so Gabe knows the deep brain is engaged.
+
 **Integration:** I route the task to Claude Code, capture output, and synthesize findings into my response. The user sees seamless collaboration — I handle the routing, Claude provides the depth.
 
 ### Cost Optimization

@@ -36,6 +36,28 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - This is your curated memory — the distilled essence, not raw logs
 - Over time, review your daily files and update MEMORY.md with what's worth keeping
 
+## 🔄 MANDATORY: Continuous Memory Save (ALL AGENTS)
+
+**Save to `memory/YYYY-MM-DD.md` DURING every session, not at the end.**
+
+Rules:
+1. After every meaningful exchange → write immediately
+2. After every tool call that changes state → log it
+3. Every 5-10 messages → checkpoint current context
+4. Before responding with a decision → save reasoning first
+5. If you detect /reset or /new → immediately write a #checkpoint entry
+
+Format:
+```
+## [HH:MM] Topic
+**What:** Brief description
+**Decision:** What was decided
+**Open:** What is pending
+```
+
+❌ No mental notes. ❌ No "save later." ❌ No end-of-session-only saves.
+If it is worth saying, it is worth saving. NOW.
+
 ### 📝 Write It Down - No "Mental Notes"!
 
 - **Memory is limited** — if you want to remember something, WRITE IT TO A FILE

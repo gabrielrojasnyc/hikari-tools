@@ -136,6 +136,11 @@ Gabe explicitly wants to operate as a builder-leader like Elon. Core traits:
 - **Browser:** Chrome installed, OpenClaw profile active for web automation
 - **Cron:** 8 active jobs (trading loop, security, updates, Twitter briefings)
 
+## System Documentation (Notion)
+**Page:** `302fc447-4d7c-81d1-b211-f7c9f478f73e`
+**URL:** https://www.notion.so/System-Documentation-Architecture-302fc4474d7c81d1b211f7c9f478f73e
+**Rule:** Every system change MUST be appended to the Changelog section of this page.
+
 ## MCP Servers (MANDATORY Usage)
 **Rule:** Use MCP servers instead of raw API calls whenever available.
 

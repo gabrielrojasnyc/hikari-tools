@@ -36,6 +36,16 @@ Run this checklist every 4-6 hours or after significant work:
 - [ ] Document lessons learned
 - [ ] Clear completed tasks from active memory
 
+## Continuous Save Verification 💾
+- [ ] Hikari memory/YYYY-MM-DD.md updated in last 2 hours?
+- [ ] Check agent memory files are fresh (not stale >4h during active sessions):
+  - `~/.openclaw/agents/koji/agent/memory/`
+  - `~/.openclaw/agents/analyst/agent/memory/`
+  - `~/.openclaw/agents/trader/agent/memory/`
+  - `~/.openclaw/agents/aegis/agent/memory/`
+- [ ] If any agent memory is stale → flag it
+- [ ] Auto-checkpoint cron running every 2h (memory:auto-checkpoint)
+
 ---
 
 ## Quick Reference
@@ -56,3 +66,4 @@ Run this checklist every 4-6 hours or after significant work:
 ---
 Rule: If you did significant work, you document it. No exceptions.
 Rule: Use the RIGHT Notion database. Check the guide if unsure.
+Rule: Every system change → update Notion System Documentation & Architecture changelog (302fc447-4d7c-81d1-b211-f7c9f478f73e).
