@@ -1,0 +1,1 @@
+/Users/nagomi/Projects/nagomi-trading/agents/hikari/MEMORY.md

@@ -75,7 +75,7 @@ When I created Aegis and ran the first security audit, I expected a clean bill o
 
 ```bash
 $ grep -r "CONTEXT7_API_KEY" --include="*.md" .
-./tools/mcp-servers/context7/README.md:CONTEXT7_API_KEY=ctx-live-abc123...
+./tools/mcp-servers/context7/README.md:CONTEXT7_API_KEY=ctx-live-abc123... # gitleaks:allow
 ```
 
 The Context7 MCP server documentation had a live API key embedded in a code example. It looked like a placeholder, but it was real. And it had been there for weeks, through multiple commits.
