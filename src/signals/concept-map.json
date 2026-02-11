@@ -1,0 +1,27 @@
+{
+  "AI infrastructure": {
+    "tickers": ["NVDA", "AMD", "TSM", "AVGO", "MRVL"],
+    "keywords": ["training", "compute", "GPU", "datacenter"],
+    "sentiment": "bullish"
+  },
+  "hyperscaler capex": {
+    "tickers": ["MSFT", "GOOGL", "AMZN", "META"],
+    "keywords": ["capex", "spending", "investment", "cloud"],
+    "sentiment": "bullish"
+  },
+  "SaaS implosion": {
+    "tickers": ["CRM", "ZM", "DOCU", "NOW"],
+    "keywords": ["implosion", "layoffs", "slowdown"],
+    "sentiment": "bearish"
+  },
+  "AI agents": {
+    "tickers": ["MSFT", "GOOGL", "AMZN", "CRM", "ORCL"],
+    "keywords": ["agent", "autonomous", "AI agent"],
+    "sentiment": "bullish"
+  },
+  "semiconductor shortage": {
+    "tickers": ["NVDA", "AMD", "TSM", "INTC", "QCOM"],
+    "keywords": ["shortage", "supply", "constraint"],
+    "sentiment": "bullish"
+  }
+}
