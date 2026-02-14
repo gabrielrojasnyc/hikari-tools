@@ -1,0 +1,45 @@
+{
+  "checkId": "hourly-1771000580475",
+  "timestamp": "2026-02-13T16:36:20.486Z",
+  "marketOpen": true,
+  "tradingDate": "2026-02-13",
+  "vix": {
+    "current": 20,
+    "threshold": 25,
+    "acceptable": true
+  },
+  "signals": {
+    "count": 0,
+    "validated": 0
+  },
+  "positions": {
+    "count": 0,
+    "reviews": []
+  },
+  "risk": {
+    "id": 1,
+    "consecutive_losses": 0,
+    "last_trade_result": null,
+    "peak_portfolio_value": 99998.7,
+    "current_drawdown_percent": 0,
+    "daily_pnl": 0,
+    "daily_trades": 0,
+    "last_trade_date": "2026-02-10",
+    "low_confidence_count": 0,
+    "last_debate_confidences": "[]",
+    "is_paused": 0,
+    "pause_reason": null,
+    "pause_until": null,
+    "trades_30d": 0,
+    "wins_30d": 0,
+    "win_rate_30d": 1,
+    "updated_at": "2026-02-10 14:00:00"
+  },
+  "trades": {
+    "current": 0,
+    "max": 5,
+    "remaining": 5
+  },
+  "actions": [],
+  "errors": []
+}
