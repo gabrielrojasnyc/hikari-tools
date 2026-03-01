@@ -1,0 +1,884 @@
+
+> nagomi-capital@0.1.0 start
+> node dist/index.js
+
+06:25:18 [nagomi-capital] [32minfo[39m: ========================================
+06:25:18 [nagomi-capital] [32minfo[39m: Starting Nagomi Capital Trading System...
+06:25:18 [nagomi-capital] [32minfo[39m: Environment: {"nodeEnv":"development","logLevel":"info"}
+06:25:18 [nagomi-capital] [32minfo[39m: ========================================
+06:25:18 [nagomi-capital] [32minfo[39m: Loading credentials from Vault...
+06:25:18 [nagomi-capital] [32minfo[39m: Credentials loaded securely from Vault {"count":10,"vaultPath":"/Users/nagomi/.openclaw/credentials"}
+06:25:18 [nagomi-capital] [32minfo[39m: Credentials loaded successfully
+06:25:19 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:19 [nagomi-capital] [32minfo[39m: Database schema initialized
+06:25:19 [nagomi-capital] [32minfo[39m: Database initialized
+06:25:19 [nagomi-capital] [32minfo[39m: Alpaca client connected {"accountId":"3fabe8c4-03e5-4ca5-80ea-83d2dcb28897","buyingPower":"199259.44","status":"ACTIVE"}
+06:25:19 [nagomi-capital] [32minfo[39m: Connected to Alpaca paper trading
+06:25:19 [nagomi-capital] [32minfo[39m: Risk state initialized {"peakValue":99998.73,"currentDrawdown":"0.00%","consecutiveLosses":0,"isPaused":false}
+06:25:19 [nagomi-capital] [32minfo[39m: Risk management initialized
+06:25:19 [nagomi-capital] [32minfo[39m: Debate manager initialized
+06:25:19 [nagomi-capital] [32minfo[39m: Starting X polling mode {"handles":30,"intervalMinutes":5}
+06:25:19 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"ERP","direction":"NEUTRAL","source":"modestproposal1","category":"equity"}
+06:25:19 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"MVP","direction":"NEUTRAL","source":"modestproposal1","category":"equity"}
+06:25:19 [nagomi-capital] [32minfo[39m: Received signal: ERP (NEUTRAL)
+06:25:19 [nagomi-capital] [32minfo[39m: Received signal: MVP (NEUTRAL)
+06:25:19 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"ERP","error":"code: 404, message: no trade found for ERP"}
+06:25:19 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"ERP"}
+06:25:19 [nagomi-capital] [32minfo[39m: Starting debate for ERP (NEUTRAL) {"debateId":"0ccde9d3-ec5f-48df-8a25-edd1d921ef33"}
+06:25:19 [nagomi-capital] [32minfo[39m: Starting debate for MVP (NEUTRAL) {"debateId":"16cad1a2-a9d4-4a88-91d9-28ded13b9780"}
+06:25:20 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:20 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:20 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"MVP"}
+06:25:20 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"MVP"}
+06:25:20 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:20 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:20 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"ERP"}
+06:25:20 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"ERP"}
+06:25:20 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"IF","direction":"NEUTRAL","source":"dampedspring","category":"equity"}
+06:25:20 [nagomi-capital] [32minfo[39m: Received signal: IF (NEUTRAL)
+06:25:20 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"IF","error":"code: 404, message: no trade found for IF"}
+06:25:20 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"IF"}
+06:25:20 [nagomi-capital] [32minfo[39m: Starting debate for IF (NEUTRAL) {"debateId":"498e5f74-499a-4c3f-a3af-ddf5f41f27b2"}
+06:25:21 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:21 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:21 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"IF"}
+06:25:21 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"IF"}
+06:25:22 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"COST","direction":"NEUTRAL","source":"Mr_Derivatives","category":"equity"}
+06:25:22 [nagomi-capital] [32minfo[39m: Received signal: COST (NEUTRAL)
+06:25:22 [nagomi-capital] [32minfo[39m: Starting debate for COST (NEUTRAL) {"debateId":"55d06b6d-a0dc-4ea5-9840-1af0bc4216cc"}
+06:25:22 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:22 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:22 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"COST"}
+06:25:22 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"COST"}
+06:25:24 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"NFP","direction":"NEUTRAL","source":"priceactionkim","category":"equity"}
+06:25:24 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"GU","direction":"NEUTRAL","source":"priceactionkim","category":"equity"}
+06:25:24 [nagomi-capital] [32minfo[39m: Received signal: NFP (NEUTRAL)
+06:25:24 [nagomi-capital] [32minfo[39m: Received signal: GU (NEUTRAL)
+06:25:24 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"NFP","error":"code: 404, message: no trade found for NFP"}
+06:25:24 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"NFP"}
+06:25:24 [nagomi-capital] [32minfo[39m: Starting debate for NFP (NEUTRAL) {"debateId":"aeafcb81-4d66-487c-be03-090463d9604d"}
+06:25:24 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"GU","error":"code: 404, message: no trade found for GU"}
+06:25:24 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"GU"}
+06:25:24 [nagomi-capital] [32minfo[39m: Starting debate for GU (NEUTRAL) {"debateId":"952147cd-d1d1-480e-b546-1958e465a8fc"}
+06:25:24 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:24 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:24 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"NFP"}
+06:25:24 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"NFP"}
+06:25:25 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:25 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:25 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"GU"}
+06:25:25 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"GU"}
+06:25:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+06:25:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+06:25:29 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+06:25:31 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"AI","direction":"NEUTRAL","source":"OptionsHawk","category":"options"}
+06:25:31 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"MNDY","direction":"NEUTRAL","source":"OptionsHawk","category":"options"}
+06:25:31 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"ICHR","direction":"NEUTRAL","source":"OptionsHawk","category":"options"}
+06:25:31 [nagomi-capital] [32minfo[39m: Received signal: AI (NEUTRAL)
+06:25:31 [nagomi-capital] [32minfo[39m: Received signal: MNDY (NEUTRAL)
+06:25:31 [nagomi-capital] [32minfo[39m: Received signal: ICHR (NEUTRAL)
+06:25:31 [nagomi-capital] [32minfo[39m: Starting debate for AI (NEUTRAL) {"debateId":"390e8c4c-59f4-4fa7-a914-2ca6acf8fa8b"}
+06:25:31 [nagomi-capital] [32minfo[39m: Starting debate for MNDY (NEUTRAL) {"debateId":"68cbbe29-a68c-4c46-abbd-2eb10135d964"}
+06:25:31 [nagomi-capital] [32minfo[39m: Starting debate for ICHR (NEUTRAL) {"debateId":"82283a0d-88f3-444b-9915-3edcdbd6be46"}
+06:25:31 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:31 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:31 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"ICHR"}
+06:25:31 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"ICHR"}
+06:25:31 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:31 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:31 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"MNDY"}
+06:25:31 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"MNDY"}
+06:25:31 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:31 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:31 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"AI"}
+06:25:31 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"AI"}
+06:25:33 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+06:25:34 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+06:25:37 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+06:25:39 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+06:25:40 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+06:25:43 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"USDT","direction":"NEUTRAL","source":"lookonchain","category":"crypto"}
+06:25:43 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"ETH","direction":"LONG","source":"lookonchain","category":"crypto"}
+06:25:43 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"USDC","direction":"SHORT","source":"lookonchain","category":"crypto"}
+06:25:43 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"ETH","direction":"LONG","source":"lookonchain","category":"crypto"}
+06:25:43 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"BTC","direction":"NEUTRAL","source":"lookonchain","category":"crypto"}
+06:25:43 [nagomi-capital] [32minfo[39m: Received signal: USDT (NEUTRAL)
+06:25:43 [nagomi-capital] [32minfo[39m: Received signal: ETH (LONG)
+06:25:43 [nagomi-capital] [32minfo[39m: Received signal: USDC (SHORT)
+06:25:43 [nagomi-capital] [32minfo[39m: Received signal: ETH (LONG)
+06:25:43 [nagomi-capital] [32minfo[39m: Received signal: BTC (NEUTRAL)
+06:25:43 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"USDC","error":"code: 404, message: no trade found for USDC"}
+06:25:43 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"USDC"}
+06:25:43 [nagomi-capital] [32minfo[39m: Starting debate for USDC (SHORT) {"debateId":"ed383dd0-66b3-467d-9f27-41e1e077c258"}
+06:25:43 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"USDT","error":"code: 404, message: no trade found for USDT"}
+06:25:43 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"USDT"}
+06:25:43 [nagomi-capital] [32minfo[39m: Starting debate for USDT (NEUTRAL) {"debateId":"63c812dc-6148-4c68-af8a-fa5a39f890b2"}
+06:25:43 [nagomi-capital] [32minfo[39m: Starting debate for BTC (NEUTRAL) {"debateId":"829add3a-3bcf-4c28-83c3-54dca67e9b64"}
+06:25:43 [nagomi-capital] [32minfo[39m: Starting debate for ETH (LONG) {"debateId":"d383d37e-4021-47f5-bb7e-2fce22c01bd6"}
+06:25:43 [nagomi-capital] [32minfo[39m: Starting debate for ETH (LONG) {"debateId":"88ba63b6-f2f8-4a8e-9e35-9efd963c9c91"}
+06:25:43 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:43 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:43 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"BTC"}
+06:25:43 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"BTC"}
+06:25:43 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:43 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:43 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"ETH"}
+06:25:43 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"ETH"}
+06:25:43 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:43 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:43 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"USDC"}
+06:25:43 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"USDC"}
+06:25:43 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:43 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:43 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"USDT"}
+06:25:43 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"USDT"}
+06:25:43 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:43 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:43 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"ETH"}
+06:25:43 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"ETH"}
+06:25:44 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"USDT","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+06:25:44 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"USDT","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+06:25:44 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"USDT","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+06:25:44 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"USDT","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+06:25:44 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"USDT","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+06:25:44 [nagomi-capital] [32minfo[39m: Received signal: USDT (NEUTRAL)
+06:25:44 [nagomi-capital] [32minfo[39m: Received signal: USDT (NEUTRAL)
+06:25:44 [nagomi-capital] [32minfo[39m: Received signal: USDT (NEUTRAL)
+06:25:44 [nagomi-capital] [32minfo[39m: Received signal: USDT (NEUTRAL)
+06:25:44 [nagomi-capital] [32minfo[39m: Received signal: USDT (NEUTRAL)
+06:25:44 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"USDT","error":"code: 404, message: no trade found for USDT"}
+06:25:44 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"USDT"}
+06:25:44 [nagomi-capital] [32minfo[39m: Starting debate for USDT (NEUTRAL) {"debateId":"305eb4dc-ec77-49c9-a56f-c0f680f3a77a"}
+06:25:44 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"USDT","error":"code: 404, message: no trade found for USDT"}
+06:25:44 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"USDT"}
+06:25:44 [nagomi-capital] [32minfo[39m: Starting debate for USDT (NEUTRAL) {"debateId":"75ca7e7c-291c-4532-b8ba-c5028af5bc45"}
+06:25:44 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"USDT","error":"code: 404, message: no trade found for USDT"}
+06:25:44 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"USDT"}
+06:25:44 [nagomi-capital] [32minfo[39m: Starting debate for USDT (NEUTRAL) {"debateId":"a9c70a10-3d02-4e60-982e-b5e9cc1a82c6"}
+06:25:44 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"USDT","error":"code: 404, message: no trade found for USDT"}
+06:25:44 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"USDT"}
+06:25:44 [nagomi-capital] [32minfo[39m: Starting debate for USDT (NEUTRAL) {"debateId":"96a14a91-9bd3-4dc9-9a92-f3f7dfa3af5e"}
+06:25:44 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"USDT","error":"code: 404, message: no trade found for USDT"}
+06:25:44 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"USDT"}
+06:25:44 [nagomi-capital] [32minfo[39m: Starting debate for USDT (NEUTRAL) {"debateId":"8e270a6e-5508-48b9-8df5-cf181c225928"}
+06:25:44 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:44 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:44 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"USDT"}
+06:25:44 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"USDT"}
+06:25:44 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:44 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:44 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"USDT"}
+06:25:44 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"USDT"}
+06:25:44 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:44 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:44 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"USDT"}
+06:25:44 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"USDT"}
+06:25:44 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:44 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:44 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"USDT"}
+06:25:44 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"USDT"}
+06:25:44 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:44 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:44 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"USDT"}
+06:25:44 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"USDT"}
+06:25:45 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"GPT","direction":"NEUTRAL","source":"CryptoCred","category":"crypto"}
+06:25:45 [nagomi-capital] [32minfo[39m: Received signal: GPT (NEUTRAL)
+06:25:45 [nagomi-capital] [32minfo[39m: Starting debate for GPT (NEUTRAL) {"debateId":"4eef690c-8199-4f00-985a-d436d45ca80a"}
+06:25:45 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:45 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:45 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"GPT"}
+06:25:45 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"GPT"}
+06:25:46 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+06:25:49 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"BTC","direction":"LONG","source":"DonAlt","category":"crypto"}
+06:25:49 [nagomi-capital] [32minfo[39m: Received signal: BTC (LONG)
+06:25:49 [nagomi-capital] [32minfo[39m: Starting debate for BTC (LONG) {"debateId":"0c444fcf-7b75-4b93-b71c-3f1a84007bd8"}
+06:25:49 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:49 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:25:49 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"BTC"}
+06:25:49 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"BTC"}
+06:25:51 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+06:25:52 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+06:25:54 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":21}
+06:25:54 [nagomi-capital] [32minfo[39m: X polling mode active
+06:25:54 [nagomi-capital] [32minfo[39m: X Stream started and listening for signals...
+06:25:54 [nagomi-capital] [32minfo[39m: Scheduled daily debate for 6:00 AM ET
+06:25:54 [nagomi-capital] [32minfo[39m: Scheduled daily P&L report for 4:30 PM ET
+06:25:54 [nagomi-capital] [32minfo[39m: Health check server started on port 3000
+06:25:54 [nagomi-capital] [32minfo[39m: Health server listening on port 3000
+06:25:55 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:25:55 [nagomi-capital] [32minfo[39m: ========================================
+06:25:55 [nagomi-capital] [32minfo[39m: Nagomi Capital is ready for trading!
+06:25:55 [nagomi-capital] [32minfo[39m: ========================================
+06:26:50 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:26:50 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"MVP"}
+06:26:50 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:26:50 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"ERP"}
+06:26:51 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:26:51 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"IF"}
+06:26:52 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:26:52 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"COST"}
+06:26:54 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:26:54 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"NFP"}
+06:26:55 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:26:55 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"GU"}
+06:27:01 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:01 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"ICHR"}
+06:27:01 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:01 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"MNDY"}
+06:27:01 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:01 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"AI"}
+06:27:13 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:13 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"BTC"}
+06:27:13 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:13 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"ETH"}
+06:27:13 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:13 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"USDC"}
+06:27:13 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:13 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"USDT"}
+06:27:13 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:13 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"ETH"}
+06:27:14 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:14 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"USDT"}
+06:27:14 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:14 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"USDT"}
+06:27:14 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:14 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"USDT"}
+06:27:14 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:14 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"USDT"}
+06:27:14 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:14 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"USDT"}
+06:27:15 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:15 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"GPT"}
+06:27:19 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:27:19 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"BTC"}
+06:28:20 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:20 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"MVP"}
+06:28:20 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:20 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"ERP"}
+06:28:21 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:21 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"IF"}
+06:28:22 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:22 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"COST"}
+06:28:24 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:24 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"NFP"}
+06:28:25 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:25 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"GU"}
+06:28:29 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"COST","bullScore":6,"bearScore":7,"flowScore":5,"finalDecision":"NO_TRADE","durationMs":187193}
+06:28:29 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:31 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:31 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"ICHR"}
+06:28:31 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:31 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"MNDY"}
+06:28:31 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:31 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"AI"}
+06:28:34 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"IF","bullScore":2,"bearScore":7,"flowScore":3,"finalDecision":"NO_TRADE","durationMs":193587}
+06:28:34 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:37 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"GU","bullScore":3,"bearScore":5,"flowScore":4,"finalDecision":"NO_TRADE","durationMs":193164}
+06:28:37 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:38 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"MVP","bullScore":2,"bearScore":8,"flowScore":4,"finalDecision":"NO_TRADE","durationMs":198639}
+06:28:38 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:39 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"ERP","bullScore":1,"bearScore":8,"flowScore":5,"finalDecision":"NO_TRADE","durationMs":199679}
+06:28:39 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:41 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"NFP","bullScore":6,"bearScore":7,"flowScore":6,"finalDecision":"NO_TRADE","durationMs":196496}
+06:28:41 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:43 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"AI","bullScore":3,"bearScore":8,"flowScore":6,"finalDecision":"NO_TRADE","durationMs":191610}
+06:28:43 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:43 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:43 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"BTC"}
+06:28:43 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:43 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"ETH"}
+06:28:43 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:43 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"USDC"}
+06:28:43 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:43 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"USDT"}
+06:28:43 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:43 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"ETH"}
+06:28:43 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"ICHR","bullScore":6,"bearScore":7,"flowScore":6,"finalDecision":"NO_TRADE","durationMs":192340}
+06:28:43 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:44 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:44 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"USDT"}
+06:28:44 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:44 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"USDT"}
+06:28:44 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:44 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"USDT"}
+06:28:44 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:44 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"USDT"}
+06:28:44 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:44 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"USDT"}
+06:28:45 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:45 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"GPT"}
+06:28:49 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:28:49 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"BTC"}
+06:28:53 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"ETH","bullScore":7,"bearScore":8,"flowScore":7,"finalDecision":"NO_TRADE","durationMs":190344}
+06:28:53 [nagomi-capital] [31merror[39m: Error sending Telegram alert {"error":"fetch failed"}
+06:28:55 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"USDT","bullScore":5,"bearScore":8,"flowScore":7,"finalDecision":"NO_TRADE","durationMs":191416}
+06:28:55 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"MNDY","bullScore":4,"bearScore":7,"flowScore":8,"finalDecision":"NO_TRADE","durationMs":204357}
+06:28:56 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:56 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:56 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"ETH","bullScore":7,"bearScore":8,"flowScore":5,"finalDecision":"NO_TRADE","durationMs":193120}
+06:28:56 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"USDC","bullScore":4,"bearScore":7,"flowScore":7,"finalDecision":"NO_TRADE","durationMs":193224}
+06:28:56 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:56 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:57 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"USDT","bullScore":6,"bearScore":7,"flowScore":6,"finalDecision":"NO_TRADE","durationMs":192665}
+06:28:57 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:57 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"BTC","bullScore":4,"bearScore":7,"flowScore":6,"finalDecision":"NO_TRADE","durationMs":194559}
+06:28:57 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:58 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"USDT","bullScore":4,"bearScore":7,"flowScore":5,"finalDecision":"NO_TRADE","durationMs":194390}
+06:28:58 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:28:58 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"USDT","bullScore":3,"bearScore":6,"flowScore":5,"finalDecision":"NO_TRADE","durationMs":194487}
+06:28:58 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:29:00 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"USDT","bullScore":6,"bearScore":7,"flowScore":8,"finalDecision":"NO_TRADE","durationMs":197004}
+06:29:00 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:29:02 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"GPT","bullScore":3,"bearScore":7,"flowScore":4,"finalDecision":"NO_TRADE","durationMs":196754}
+06:29:02 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:29:04 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"USDT","bullScore":4,"bearScore":6,"flowScore":6,"finalDecision":"NO_TRADE","durationMs":200233}
+06:29:04 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:29:06 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"BTC","bullScore":3,"bearScore":7,"flowScore":5,"finalDecision":"NO_TRADE","durationMs":197784}
+06:29:07 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:31:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+06:31:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+06:31:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+06:31:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+06:31:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+06:31:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+06:31:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+06:31:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+06:31:19 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"ETH","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+06:31:19 [nagomi-capital] [32minfo[39m: Received signal: ETH (NEUTRAL)
+06:31:19 [nagomi-capital] [32minfo[39m: Starting debate for ETH (NEUTRAL) {"debateId":"ad349ff0-95ce-4221-b5fe-465595380e38"}
+06:31:20 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:31:20 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:31:20 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"ETH"}
+06:31:20 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"ETH"}
+06:31:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+06:31:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+06:31:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+06:31:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+06:32:50 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:32:50 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"ETH"}
+06:34:20 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:34:20 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"ETH"}
+06:34:32 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"ETH","bullScore":3,"bearScore":8,"flowScore":5,"finalDecision":"NO_TRADE","durationMs":192863}
+06:34:33 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:36:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+06:36:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+06:36:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+06:36:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+06:36:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+06:36:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+06:36:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+06:36:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+06:36:20 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"BTC","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+06:36:20 [nagomi-capital] [32minfo[39m: Received signal: BTC (NEUTRAL)
+06:36:20 [nagomi-capital] [32minfo[39m: Starting debate for BTC (NEUTRAL) {"debateId":"b7a6190d-1b3a-42e4-953c-f34a0965258b"}
+06:36:20 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:36:20 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:36:20 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"BTC"}
+06:36:20 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"BTC"}
+06:36:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+06:36:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+06:36:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+06:36:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+06:37:50 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:37:50 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"BTC"}
+06:39:20 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:39:20 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"BTC"}
+06:39:33 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"BTC","bullScore":5,"bearScore":8,"flowScore":7,"finalDecision":"NO_TRADE","durationMs":193412}
+06:39:33 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:41:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+06:41:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+06:41:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+06:41:08 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"FT","direction":"LONG","source":"unusual_whales","category":"options"}
+06:41:08 [nagomi-capital] [32minfo[39m: Received signal: FT (LONG)
+06:41:08 [nagomi-capital] [32minfo[39m: Starting debate for FT (LONG) {"debateId":"aa78bd2a-d098-44cb-8b2c-568930252e23"}
+06:41:08 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:41:08 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:41:08 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"FT"}
+06:41:08 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"FT"}
+06:41:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+06:41:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+06:41:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+06:41:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+06:41:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+06:41:18 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"BTC","direction":"NEUTRAL","source":"lookonchain","category":"crypto"}
+06:41:18 [nagomi-capital] [32minfo[39m: Received signal: BTC (NEUTRAL)
+06:41:18 [nagomi-capital] [32minfo[39m: Starting debate for BTC (NEUTRAL) {"debateId":"6da8bbf9-63d3-4313-ad90-5ed79a12d97b"}
+06:41:19 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:41:19 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:41:19 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"BTC"}
+06:41:19 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"BTC"}
+06:41:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+06:41:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+06:41:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+06:41:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":2}
+06:42:38 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:42:38 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"FT"}
+06:42:49 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:42:49 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"BTC"}
+06:44:08 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:44:08 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"FT"}
+06:44:19 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:44:19 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"BTC"}
+06:44:21 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"FT","bullScore":4,"bearScore":7,"flowScore":3,"finalDecision":"NO_TRADE","durationMs":192831}
+06:44:21 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:44:27 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"BTC","bullScore":6,"bearScore":8,"flowScore":9,"finalDecision":"NO_TRADE","durationMs":189058}
+06:44:27 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:46:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+06:46:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+06:46:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+06:46:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+06:46:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+06:46:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+06:46:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+06:46:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+06:46:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+06:46:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+06:46:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+06:46:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":0}
+06:51:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+06:51:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+06:51:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+06:51:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+06:51:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+06:51:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+06:51:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+06:51:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+06:51:19 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"BTC","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+06:51:19 [nagomi-capital] [32minfo[39m: Received signal: BTC (NEUTRAL)
+06:51:19 [nagomi-capital] [32minfo[39m: Starting debate for BTC (NEUTRAL) {"debateId":"a7121b88-d297-45f5-b62d-dd63a4080db4"}
+06:51:20 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:51:20 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+06:51:20 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"BTC"}
+06:51:20 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"BTC"}
+06:51:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+06:51:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+06:51:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+06:51:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+06:52:50 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+06:52:50 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"BTC"}
+06:54:20 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+06:54:20 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"BTC"}
+06:54:30 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"BTC","bullScore":6,"bearScore":8,"flowScore":8,"finalDecision":"NO_TRADE","durationMs":190780}
+06:54:30 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+06:56:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+06:56:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+06:56:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+06:56:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+06:56:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+06:56:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+06:56:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+06:56:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+06:56:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+06:56:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+06:56:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+06:56:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":0}
+07:01:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:01:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:01:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:01:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:01:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:01:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:01:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:01:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:01:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:01:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:01:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:01:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":0}
+07:05:56 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"GOOG","direction":"NEUTRAL","source":"dampedspring","category":"equity"}
+07:05:56 [nagomi-capital] [32minfo[39m: Received signal: GOOG (NEUTRAL)
+07:05:56 [nagomi-capital] [32minfo[39m: Starting debate for GOOG (NEUTRAL) {"debateId":"8f61c574-105d-4641-9f84-53c2e0a202ef"}
+07:05:56 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:05:56 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+07:05:56 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"GOOG"}
+07:05:56 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"GOOG"}
+07:06:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:06:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:06:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:06:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:06:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:06:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:06:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:06:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:06:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:06:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:06:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:06:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+07:07:26 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+07:07:26 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"GOOG"}
+07:08:56 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+07:08:56 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"GOOG"}
+07:09:07 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"GOOG","bullScore":5,"bearScore":7,"flowScore":6,"finalDecision":"NO_TRADE","durationMs":190962}
+07:09:07 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:11:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:11:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:11:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:11:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:11:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:11:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:11:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:11:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:11:20 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"BTC","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+07:11:20 [nagomi-capital] [32minfo[39m: Received signal: BTC (NEUTRAL)
+07:11:20 [nagomi-capital] [32minfo[39m: Starting debate for BTC (NEUTRAL) {"debateId":"8fc6d042-68c8-44b5-9ced-dabe984f9b6a"}
+07:11:20 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:11:20 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+07:11:20 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"BTC"}
+07:11:20 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"BTC"}
+07:11:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:11:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:11:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:11:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+07:12:50 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+07:12:50 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"BTC"}
+07:14:20 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+07:14:20 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"BTC"}
+07:14:34 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"BTC","bullScore":6,"bearScore":7,"flowScore":8,"finalDecision":"NO_TRADE","durationMs":194438}
+07:14:34 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:16:01 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"TPUSA","direction":"NEUTRAL","source":"peterlbrandt","category":"equity"}
+07:16:01 [nagomi-capital] [32minfo[39m: Received signal: TPUSA (NEUTRAL)
+07:16:01 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"TPUSA","error":"code: 404, message: no trade found for TPUSA"}
+07:16:01 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"TPUSA"}
+07:16:01 [nagomi-capital] [32minfo[39m: Starting debate for TPUSA (NEUTRAL) {"debateId":"f5d14014-9fb8-4df2-823d-a8d05e7355a7"}
+07:16:01 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:16:01 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+07:16:01 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"TPUSA"}
+07:16:01 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"TPUSA"}
+07:16:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:16:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:16:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:16:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:16:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:16:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:16:14 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:16:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:16:19 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"BTC","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+07:16:19 [nagomi-capital] [32minfo[39m: Received signal: BTC (NEUTRAL)
+07:16:19 [nagomi-capital] [32minfo[39m: Starting debate for BTC (NEUTRAL) {"debateId":"99fc390e-03b0-404e-9029-00a246cea7ad"}
+07:16:20 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:16:20 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+07:16:20 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"BTC"}
+07:16:20 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"BTC"}
+07:16:21 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:16:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:16:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:16:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":2}
+07:17:31 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+07:17:31 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"TPUSA"}
+07:17:50 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+07:17:50 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"BTC"}
+07:19:01 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+07:19:01 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"TPUSA"}
+07:19:14 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"TPUSA","bullScore":2,"bearScore":7,"flowScore":1,"finalDecision":"NO_TRADE","durationMs":193155}
+07:19:14 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:19:20 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+07:19:20 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"BTC"}
+07:19:56 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"BTC","bullScore":3,"bearScore":8,"flowScore":8,"finalDecision":"SHORT","durationMs":216275}
+07:19:56 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:19:56 [nagomi-capital] [32minfo[39m: Trade approved, forwarding to Sora... {"asset":"BTC","size":1750}
+07:19:56 [nagomi-capital] [32minfo[39m: Received decision from debate {"asset":"BTC","direction":"SHORT","confidence":1.75}
+07:19:56 [nagomi-capital] [32minfo[39m: Sora received trade decision {"asset":"BTC","direction":"SHORT","confidence":1.75}
+07:19:56 [nagomi-capital] [33mwarn[39m: Trade decision validation failed {"reason":"Confidence score 1.75 below minimum 5"}
+07:19:56 [nagomi-capital] [33mwarn[39m: Trade execution failed Confidence score 1.75 below minimum 5 {"status":"rejected"}
+07:21:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:21:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:21:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:21:09 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"US","direction":"NEUTRAL","source":"unusual_whales","category":"options"}
+07:21:09 [nagomi-capital] [32minfo[39m: Received signal: US (NEUTRAL)
+07:21:09 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"US","error":"code: 404, message: no trade found for US"}
+07:21:09 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"US"}
+07:21:09 [nagomi-capital] [32minfo[39m: Starting debate for US (NEUTRAL) {"debateId":"a50bc4d9-d1cd-4b55-ba60-7dea21cbf210"}
+07:21:09 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:21:09 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+07:21:09 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"US"}
+07:21:09 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"US"}
+07:21:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:21:11 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:21:13 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:21:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:21:17 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:21:23 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:21:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:21:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:21:31 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+07:22:39 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+07:22:39 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"US"}
+07:24:09 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+07:24:09 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"US"}
+07:24:28 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"US","bullScore":3,"bearScore":7,"flowScore":7,"finalDecision":"NO_TRADE","durationMs":199619}
+07:24:29 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:26:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:26:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:26:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:26:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:26:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:26:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:26:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:26:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:26:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:26:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:26:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:26:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":0}
+07:31:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:31:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:31:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:31:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:31:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:31:13 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:31:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:31:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:31:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:31:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:31:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:31:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":0}
+07:36:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:36:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:36:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:36:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:36:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:36:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:36:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:36:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:36:19 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"USDT","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+07:36:19 [nagomi-capital] [32minfo[39m: Received signal: USDT (NEUTRAL)
+07:36:19 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"USDT","error":"code: 404, message: no trade found for USDT"}
+07:36:19 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"USDT"}
+07:36:19 [nagomi-capital] [32minfo[39m: Starting debate for USDT (NEUTRAL) {"debateId":"ddf9db01-26a7-4641-942e-550cae21bdf3"}
+07:36:20 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:36:20 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+07:36:20 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"USDT"}
+07:36:20 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"USDT"}
+07:36:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:36:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:36:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:36:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+07:37:50 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+07:37:50 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"USDT"}
+07:39:20 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+07:39:20 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"USDT"}
+07:39:32 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"USDT","bullScore":6,"bearScore":7,"flowScore":8,"finalDecision":"NO_TRADE","durationMs":192996}
+07:39:33 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:41:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:41:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:41:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:41:08 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"DOJ","direction":"NEUTRAL","source":"unusual_whales","category":"options"}
+07:41:08 [nagomi-capital] [32minfo[39m: Received signal: DOJ (NEUTRAL)
+07:41:08 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"DOJ","error":"code: 404, message: no trade found for DOJ"}
+07:41:08 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"DOJ"}
+07:41:08 [nagomi-capital] [32minfo[39m: Starting debate for DOJ (NEUTRAL) {"debateId":"01ddc297-d27d-4219-86c2-8ecbbca31b8d"}
+07:41:08 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:41:08 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+07:41:08 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"DOJ"}
+07:41:08 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"DOJ"}
+07:41:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:41:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:41:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:41:14 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:41:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:41:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:41:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:41:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:41:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+07:42:38 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+07:42:38 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"DOJ"}
+07:44:08 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+07:44:08 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"DOJ"}
+07:44:21 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"DOJ","bullScore":1,"bearScore":7,"flowScore":2,"finalDecision":"NO_TRADE","durationMs":193702}
+07:44:22 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:46:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:46:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:46:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:46:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:46:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:46:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:46:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:46:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:46:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:46:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:46:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:46:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":0}
+07:51:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:51:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:51:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:51:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:51:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:51:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:51:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:51:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:51:20 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"XRP","direction":"NEUTRAL","source":"whale_alert","category":"crypto"}
+07:51:20 [nagomi-capital] [32minfo[39m: Received signal: XRP (NEUTRAL)
+07:51:20 [nagomi-capital] [32minfo[39m: Starting debate for XRP (NEUTRAL) {"debateId":"22853163-2802-432e-902f-68138d54adf8"}
+07:51:20 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:51:20 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+07:51:20 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"XRP"}
+07:51:20 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"XRP"}
+07:51:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:51:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:51:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:51:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+07:52:50 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+07:52:50 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"XRP"}
+07:54:20 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+07:54:20 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"XRP"}
+07:54:31 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"XRP","bullScore":4,"bearScore":7,"flowScore":7,"finalDecision":"NO_TRADE","durationMs":191456}
+07:54:32 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+07:56:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+07:56:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+07:56:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+07:56:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+07:56:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+07:56:13 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+07:56:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+07:56:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+07:56:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+07:56:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+07:56:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+07:56:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":0}
+08:01:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+08:01:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+08:01:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+08:01:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+08:01:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+08:01:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+08:01:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+08:01:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+08:01:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+08:01:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+08:01:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+08:01:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":0}
+08:05:56 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"VEA","direction":"LONG","source":"dampedspring","category":"equity"}
+08:05:56 [nagomi-capital] [32minfo[39m: Received signal: VEA (LONG)
+08:05:56 [nagomi-capital] [32minfo[39m: Starting debate for VEA (LONG) {"debateId":"c19444c2-4c95-4d73-b6b4-183198561d6f"}
+08:05:56 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+08:05:56 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+08:05:56 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"VEA"}
+08:05:56 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"VEA"}
+08:06:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+08:06:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+08:06:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+08:06:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+08:06:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+08:06:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+08:06:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+08:06:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+08:06:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+08:06:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+08:06:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+08:06:31 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+08:07:26 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+08:07:26 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"VEA"}
+08:08:56 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+08:08:56 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"VEA"}
+08:09:20 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"VEA","bullScore":7,"bearScore":6,"flowScore":6,"finalDecision":"NO_TRADE","durationMs":203942}
+08:09:20 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+08:11:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+08:11:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+08:11:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+08:11:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+08:11:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+08:11:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+08:11:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+08:11:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+08:11:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+08:11:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+08:11:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+08:11:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":0}
+08:16:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+08:16:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+08:16:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+08:16:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+08:16:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+08:16:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+08:16:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+08:16:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+08:16:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+08:16:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+08:16:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+08:16:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":0}
+08:21:00 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"US","direction":"NEUTRAL","source":"priceactionkim","category":"equity"}
+08:21:00 [nagomi-capital] [32minfo[39m: Received signal: US (NEUTRAL)
+08:21:00 [nagomi-capital] [31merror[39m: Failed to get market data {"symbol":"US","error":"code: 404, message: no trade found for US"}
+08:21:00 [nagomi-capital] [33mwarn[39m: Market data unavailable for asset {"asset":"US"}
+08:21:00 [nagomi-capital] [32minfo[39m: Starting debate for US (NEUTRAL) {"debateId":"384a93bf-502b-4f7c-a089-31c3906cbb34"}
+08:21:00 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+08:21:00 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+08:21:00 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"US"}
+08:21:00 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"US"}
+08:21:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+08:21:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+08:21:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+08:21:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+08:21:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+08:21:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+08:21:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+08:21:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+08:21:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+08:21:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+08:21:28 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+08:21:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+08:22:30 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+08:22:30 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"US"}
+08:24:00 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+08:24:00 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"US"}
+08:24:12 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"US","bullScore":4,"bearScore":7,"flowScore":6,"finalDecision":"NO_TRADE","durationMs":192846}
+08:24:13 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+08:25:57 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"ETH","direction":"NEUTRAL","source":"Mr_Derivatives","category":"equity"}
+08:25:57 [nagomi-capital] [32minfo[39m: Received signal: ETH (NEUTRAL)
+08:25:57 [nagomi-capital] [32minfo[39m: Starting debate for ETH (NEUTRAL) {"debateId":"494d6f83-f858-4992-9046-251d882775c5"}
+08:25:57 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+08:25:57 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+08:25:57 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"ETH"}
+08:25:57 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"ETH"}
+08:26:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+08:26:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+08:26:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+08:26:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+08:26:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+08:26:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+08:26:14 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+08:26:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+08:26:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+08:26:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+08:26:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+08:26:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+08:27:27 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+08:27:27 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"ETH"}
+08:28:57 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+08:28:57 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"ETH"}
+08:29:16 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"ETH","bullScore":2,"bearScore":8,"flowScore":6,"finalDecision":"NO_TRADE","durationMs":198665}
+08:29:16 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+08:30:57 [nagomi-capital] [32minfo[39m: Valid signal detected from poll {"asset":"RACE","direction":"NEUTRAL","source":"Mr_Derivatives","category":"equity"}
+08:30:57 [nagomi-capital] [32minfo[39m: Received signal: RACE (NEUTRAL)
+08:30:57 [nagomi-capital] [32minfo[39m: Starting debate for RACE (NEUTRAL) {"debateId":"1ef4c61f-a7bf-4fb6-8784-4be7b112e5a0"}
+08:30:57 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+08:30:57 [nagomi-capital] [32minfo[39m: Phase 1: Thesis Generation (90s window)
+08:30:57 [nagomi-capital] [32minfo[39m: BullMika analyzing signal {"asset":"RACE"}
+08:30:57 [nagomi-capital] [32minfo[39m: FlowMika analyzing signal {"asset":"RACE"}
+08:31:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+08:31:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+08:31:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+08:31:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+08:31:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+08:31:12 [nagomi-capital] [33mwarn[39m: User not found {"handle":"cgcameron11"}
+08:31:15 [nagomi-capital] [33mwarn[39m: User not found {"handle":"traderfuturist"}
+08:31:16 [nagomi-capital] [33mwarn[39m: User not found {"handle":"fiftyonestreet"}
+08:31:22 [nagomi-capital] [33mwarn[39m: User not found {"handle":"Pentoshi1"}
+08:31:26 [nagomi-capital] [33mwarn[39m: User not found {"handle":"ali_charts"}
+08:31:27 [nagomi-capital] [33mwarn[39m: User not found {"handle":"woonomic"}
+08:31:30 [nagomi-capital] [32minfo[39m: Poll complete {"accountsPolled":30,"signalsFound":1}
+08:32:27 [nagomi-capital] [32minfo[39m: Phase 2: Cross-Examination (90s window)
+08:32:27 [nagomi-capital] [32minfo[39m: BearMika analyzing signal {"asset":"RACE"}
+08:33:57 [nagomi-capital] [32minfo[39m: Phase 3: Final Judgment
+08:33:57 [nagomi-capital] [32minfo[39m: JudgeMika evaluating debate {"asset":"RACE"}
+08:34:11 [nagomi-capital] [32minfo[39m: Debate completed {"asset":"RACE","bullScore":8,"bearScore":8,"flowScore":6,"finalDecision":"NO_TRADE","durationMs":193606}
+08:34:11 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+08:36:02 [nagomi-capital] [33mwarn[39m: User not found {"handle":"moneytaur"}
+08:36:03 [nagomi-capital] [33mwarn[39m: User not found {"handle":"madaznfootball"}
+08:36:04 [nagomi-capital] [33mwarn[39m: User not found {"handle":"kazonomics"}
+08:36:09 [nagomi-capital] [33mwarn[39m: User not found {"handle":"markflowchaser"}
+08:36:10 [nagomi-capital] [33mwarn[39m: User not found {"handle":"jsbodycount"}
+08:36:11 [nagomi-capital] [32minfo[39m: Received SIGTERM, starting graceful shutdown...
+08:36:12 [nagomi-capital] [31merror[39m: Failed to send Telegram alert {"status":400,"statusText":"Bad Request"}
+08:36:12 [nagomi-capital] [32minfo[39m: X polling stopped
+08:36:12 [nagomi-capital] [32minfo[39m: X stream stopped
+08:36:12 [nagomi-capital] [32minfo[39m: Final P&L sync completed
+08:36:12 [nagomi-capital] [32minfo[39m: Graceful shutdown completed
