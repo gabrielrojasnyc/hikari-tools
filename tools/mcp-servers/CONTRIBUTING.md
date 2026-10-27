@@ -1,3 +1,38 @@
+# This Hikari package
+
+This directory currently contains the `docfork-local` package: its `package.json`
+compiles `src/` to `dist/`, and `start-docfork.sh` builds it with `npm run build`
+before launching `dist/index.js`. For this checked-in package, use its
+`package-lock.json` and the repository's `.nvmrc`:
+
+```bash
+npm ci
+npm run build
+node --test tests/mcp-registration.test.mjs
+```
+
+Run installation only when registry access is authorized. The test uses an
+in-memory MCP transport, fake indexing/search objects, and a temporary file; it
+does not start the application or contact Ollama.
+
+The pnpm workspace files and the upstream instructions below were imported with
+this directory in commit `b492126acc3a0e34c128619a4630a36e3035595d`.
+Their `packages/*` / `apps/*` layout and root lock importer do not describe the
+current `docfork-local` manifest. They are preserved as imported material, not a
+validated alternative lockfile for this package. Do not regenerate them from a
+guessed workspace or use them to claim this npm dependency graph was audited.
+
+Equivalent baseline package/source/lock copies also exist in the Nagomi trading
+repository under `tools/mcp-servers/docfork` and
+`infrastructure/mcp-servers/docfork`. Byte equality establishes duplication, not
+which location is actively launched or owns future releases. Coordinate changes
+with that repository's maintainer before synchronizing or retiring copies.
+
+# Imported upstream contribution instructions
+
+The following instructions describe the upstream Docfork workspace, not the
+flattened Hikari package above. They are retained for provenance.
+
 # Contributing
 
 ## Setup
