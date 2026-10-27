@@ -9,3 +9,14 @@ Remaining audit findings are not suppressed: node-cron3→uuid remains in root/M
 Use npm for the MCP package. Its pre-existing pnpm lock/workspace describe unrelated eslint/turbo workspace importers, do not match the docfork manifest, and were not regenerated or certified by this patch. Coordinate a separate removal/reconciliation with the canonical docfork owner before treating pnpm as a supported reproducible build.
 
 Repository history tracks node_modules. These tracked installations are not updated by this patch: fresh npm ci is required. Generated native/dependency files from local verification must not be committed as source changes.
+
+## Offline UUID compatibility follow-up
+
+The node-cron3 dependency is retained in root, MCP and capital. Its UUID dependency
+is scoped to11.1.1 through an override after checking that node-cron calls only
+UUIDv4. Stopped-task tests cover all current schedule expressions, generated v4
+identities, storage and explicit names without activating a scheduler. Registry
+reports have not been refreshed: the last known node-cron/uuid finding maps to a
+fixed UUID version, but this is not a new clean audit claim. Zod3 and Alpaca
+findings still require compatible remediation. The isolated source fix does not
+upgrade the original installed tools or establish any running service identity.
