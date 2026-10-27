@@ -1,3 +1,11 @@
+> **Local package note:** the current manifest is `docfork-local`, and
+> `start-docfork.sh` builds with npm and launches `dist/index.js`. See
+> [local contribution instructions](CONTRIBUTING.md#this-hikari-package) for the
+> validated npm build/test path and the preserved legacy pnpm workspace files.
+> The Notion documentation below was imported alongside this package and does
+> not identify the current manifest or its entry point. It remains here for
+> provenance; do not use it as evidence of an active Notion deployment.
+
 # Notion MCP Server
 
 MCP (Model Context Protocol) server for Notion integration. Allows reading and updating Notion databases and pages.
