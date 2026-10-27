@@ -1,10 +1,13 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { CallToolResult } from '@modelcontextprotocol/sdk/types.js';
-import { z } from 'zod';
+// Use the SDK's explicit Zod3 entrypoint so its schema types share identity.
+import { z } from 'zod/v3';
 import { LocalIndexer } from './indexer.js';
 import { VectorSearch } from './search.js';
 import { IndexConfig } from './types.js';
 
+// Keep runtime Zod3 objects for parsing. Register their raw shapes with the SDK
+// to avoid recursive Zod3/Zod4 object inference in registerTool.
 // Schema definitions
 const SearchInputSchema = z.object({
   query: z.string(),
@@ -35,7 +38,7 @@ export function createMCPServer(indexer: LocalIndexer, search: VectorSearch, con
       title: 'Search Local Documentation',
       description:
         'Search through indexed local documents in the workspace. Returns relevant code snippets and documentation chunks with file paths and line numbers.',
-      inputSchema: SearchInputSchema,
+      inputSchema: SearchInputSchema.shape,
     },
     async (args): Promise<CallToolResult> => {
       try {
@@ -101,7 +104,7 @@ export function createMCPServer(indexer: LocalIndexer, search: VectorSearch, con
       title: 'Read Local Document',
       description:
         'Read the full content of a specific file from the workspace.',
-      inputSchema: ReadDocInputSchema,
+      inputSchema: ReadDocInputSchema.shape,
     },
     async (args): Promise<CallToolResult> => {
       try {
@@ -137,7 +140,7 @@ export function createMCPServer(indexer: LocalIndexer, search: VectorSearch, con
       title: 'Ask About Workspace',
       description:
         'Ask a question about the workspace and get an answer using RAG (Retrieval-Augmented Generation) with Ollama.',
-      inputSchema: AskInputSchema,
+      inputSchema: AskInputSchema.shape,
     },
     async (args): Promise<CallToolResult> => {
       try {
@@ -202,7 +205,7 @@ export function createMCPServer(indexer: LocalIndexer, search: VectorSearch, con
       title: 'Reindex Workspace',
       description:
         'Manually trigger a full reindex of the workspace directory.',
-      inputSchema: EmptyInputSchema,
+      inputSchema: EmptyInputSchema.shape,
     },
     async (): Promise<CallToolResult> => {
       try {
@@ -237,7 +240,7 @@ export function createMCPServer(indexer: LocalIndexer, search: VectorSearch, con
       title: 'Get Index Statistics',
       description:
         'Get statistics about the current index (number of chunks, files indexed).',
-      inputSchema: EmptyInputSchema,
+      inputSchema: EmptyInputSchema.shape,
     },
     async (): Promise<CallToolResult> => {
       const stats = indexer.getStats();
